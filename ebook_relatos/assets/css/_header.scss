@@ -1,0 +1,182 @@
+
+// HEADER_INDEX
+
+.header_index {
+	width: 100%;
+	background-image: url(../img/topo.svg);
+	background-size: cover;
+	background-position: top center;
+	padding-bottom: 200px;
+}
+
+.tituloum {
+	font-family: $fonte_titulo;
+	font-weight: bold;
+	font-size: 5em;
+	color: $amarelo;
+	padding: 350px 0 0 0;
+	@media (max-width: $celular) {
+		font-size: 3em;
+		padding: 250px 0 0 0;
+	}
+	@media (max-width: $tablet) {
+		margin-left: 15px;
+		padding-top: 250px;
+		font-size: 3em;
+	}
+}
+
+.titulodois {
+	font-family: $fonte_titulo;
+	font-weight: normal;
+	font-size: 2em;
+	color: white;
+	padding-top: 15px;
+	@media (max-width: $celular) {
+		font-size: 1.2em;
+		padding: 5px 0 0 0;
+		margin-left: 0;
+	}
+	@media (max-width: $tablet) {
+		margin-left: 15px;
+		font-size: 1.5em;
+	}
+}
+
+.botoes_index {
+
+	a { 	
+		font-family: $fonte_titulo;
+		background-color: $amarelo;
+		font-weight: bold;
+		display: inline-block;
+		color: $roxo;
+		box-shadow: 0 2px 0 0 $roxo;
+		padding: 10px 15px;
+		margin: 20px 20px 0 0;
+		font-size: 1.3em;
+		&:hover {
+			color: $roxo;
+			background-color: white;
+		}
+		@media (max-width: $celular) {
+			width: 42%;
+			font-size: 1em;
+			padding: 10px;
+			margin: 40px 0 0 15px;
+			&:hover {
+				color: none;
+			}
+		}
+		@media (max-width: $tablet) {
+		margin-left: 15px;
+		}
+	}
+}
+
+.marcaufg {
+	width: 100px;
+	padding-top: 50px;
+	@media (max-width: $celular) {
+		margin-left: 15px;
+		padding-top: 25px;
+	}
+	@media (max-width: $tablet) {
+		margin-left: 15px;
+	}
+}
+
+
+// HEADER_CONTEUDO
+
+.header_conteudo {
+	background-image: url(../img/topoconteudo.svg);
+	background-size: cover;
+	background-position: top center;
+	width: 100%;
+	position: relative;
+	padding: 65px 0 5px 0;
+
+
+	&:before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 25px;
+		background-color: $amarelo;
+		display: block;
+	}
+
+	.nome_curso {
+		// float: left;
+		// vertical-align: baseline;
+
+		h1 {
+			font-family: $fonte_titulo;
+			font-size: 3.1em;
+			font-weight: bold;
+			color: $amarelo;
+			display: inline-block;
+			padding: 0;
+			margin-bottom: 0;
+			padding-right: 20px;
+			@media (max-width: &tablet) {
+				padding-left: 15px;
+			}
+			@media (max-width: &celular) {
+				padding-left: 15px;
+				width: 80%;
+				display: block;
+			}
+		}
+
+		p {
+			font-family: $fonte_titulo;
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0;
+			font-weight: normal;
+			font-size: 1.2em;
+			line-height: 1.2em;
+			color: #fff;
+			width: 60%;
+			padding-bottom: 19px;
+			@media (max-width: &tablet) {
+				width: 10%;
+			}
+			@media (max-width: $celular) {
+				padding-left: 15px;
+				width: 80%;
+			}
+		}
+	}
+
+	.menu {
+		float: right;
+		width: 40px;
+		// clear: right;
+		margin-top: -50px;
+		@media (max-width: &tablet) {
+			padding-right: 7px;
+			padding-top: 20px;
+		}
+		@media (max-width: $celular){
+			display: block;
+			float: none;
+			padding: 55px 0 15px 15px;
+			width: 60px;
+			}
+	}
+
+}
+
+
+
+
+
+
+
+
+
