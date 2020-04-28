@@ -6,8 +6,27 @@
 	border-top: 4px solid $amarelo;
 	border-bottom: 4px solid $amarelo;
 	padding: 25px 25px 10px 25px;
-	float: right;
+	
 	margin-top: 90px;
+	@media (max-width: $tablet) {
+		width: 100%;
+		float: none;
+		display: block;
+		margin-top: 20px;
+
+	}
+	@media (max-width: $celular) {
+		width: 100%;
+		float: none;
+		margin-top: 20px;
+	}
+}
+
+.curriculo {
+	border-top: 4px solid $amarelo;
+	border-bottom: 4px solid $amarelo;
+	padding: 25px 25px 10px 25px;
+	margin-top: 20px;
 	@media (max-width: $tablet) {
 		width: 100%;
 		float: none;
@@ -83,8 +102,10 @@ img {
 		font-weight: bold;
 		display: inline-block;
 		border-bottom: none;
+		color: $roxo;
 		&:hover {
 			border-bottom: none;
+			color: #000;
 		}
 		@media (max-width: $celular) {
 			display: block;
@@ -99,6 +120,7 @@ img {
 		border-bottom: 1px solid lighten($grafite, 55%);
 		span {
 		padding: 40px 0 20px 0; 
+		width: 80%;
 		font-weight: normal;
 		display: inline-block;
 		&:nth-child(2){
@@ -109,9 +131,13 @@ img {
 			color: $roxo;
 			border-bottom: 1px solid $grafite;
 		}
+		@media (max-width: $celular) {
+		width: 100%;
+		}
 		@media (max-width: $tablet) {
-			span {
+		span {
 		padding: 40px 0 20px 0; 
+		width: 100%;
 		font-weight: normal;
 		display: inline-block;
 		&:nth-child(2){
@@ -128,10 +154,14 @@ img {
 
 	width: 50%;
 	
-	h1, h2, h3, h4 {
+	h1, h2, h3 {
 		color: darken($roxo, 10%);
-		padding: 20px 0 0 0;
+		padding: 40px 0 0 0;
+	}
 
+	h4 {
+		color: darken($roxo, 10%);
+		padding: 15px 0 0 0;
 	}
 
 	p {

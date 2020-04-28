@@ -26,6 +26,7 @@ body {
 //LINKS
 a { 
 	color: $roxo;
+	font-weight: bold;
 	cursor: pointer;
 	
 	&:link, &:hover, &:visited, &:active {
