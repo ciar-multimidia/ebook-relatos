@@ -152,7 +152,7 @@ img {
 
 .ficha {
 
-	width: 50%;
+	width: 100%;
 	
 	h1, h2, h3 {
 		color: darken($roxo, 10%);
@@ -170,7 +170,7 @@ img {
 	}
 
 	.ciarufg {
-		margin: 50px 0;
+		margin: 30px 0 50px 0;
 		width: 240px;
 	}
 
@@ -189,6 +189,7 @@ img {
 	border: 1px solid $grafite;
 	margin-top: 40px;
 	padding: 30px;
+	width: 60%;
 	p {
 		font-size: 0.9em;
 	}
@@ -203,7 +204,7 @@ img {
 }
 
 #link {
-	width: 37%;
+	width: 20%;
 	font-weight: normal;
 	display: block;
 	margin-top: 50px;
@@ -211,6 +212,7 @@ img {
 	color: $bg;
 	font-size: 1.2em;
 	padding: 15px;
+	text-align: center;
 	&:hover {
 		background-color: $amarelo;
 		color: darken($roxo, 10%);
@@ -223,6 +225,12 @@ img {
 		text-align: center;
 	}
 
+}
+
+#linha {
+	border-top: 2px solid $amarelo;
+	width: 100%;
+	padding: 30px 0;
 }
 
 //NOTA DE RODAPÉ
