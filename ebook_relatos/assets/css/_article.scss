@@ -6,6 +6,7 @@
 	border-top: 4px solid $amarelo;
 	border-bottom: 4px solid $amarelo;
 	padding: 25px 25px 10px 25px;
+	width: 85%;
 	
 	margin-top: 90px;
 	@media (max-width: $tablet) {
@@ -27,6 +28,9 @@
 	border-bottom: 4px solid $amarelo;
 	padding: 25px 25px 10px 25px;
 	margin-top: 20px;
+	p {
+		width: 100%;
+	}
 	@media (max-width: $tablet) {
 		width: 100%;
 		float: none;
@@ -49,6 +53,34 @@ blockquote {
 
 img {
 	width: 100%;
+}
+
+//IMPRIMIR
+
+.print {
+	width: 48px;
+	float: right;
+	margin-top: 87px;
+	pointer: hover;
+	@media (max-width: $tablet) {
+		display: none;
+		}
+	@media (max-width: $celular) {
+		display: none;
+		}
+}
+
+.printindex {
+	width: 48px;
+	float: right;
+	margin-top: 50px;
+	pointer: hover;
+	@media (max-width: $tablet) {
+		display: none;
+		}
+	@media (max-width: $celular) {
+		display: none;
+		}
 }
 
 // TABELA 
@@ -74,13 +106,19 @@ img {
 // PAGINACAO
 
 .pagina {
-	font-size: 1em;
-	color: #9c9c9c;
-	border-bottom: 1px solid #d6d6d6;
+	font-size: 1.5em;
+	color: $amarelo;
+	border-bottom: 1px solid #E5E5E5;
 	width: 100%;
 	display: block;
 	margin: 0 0 30px 0;
 	text-align: right;
+}
+
+//LISTA 
+
+li {
+	padding-bottom: 15px;
 }
 
 

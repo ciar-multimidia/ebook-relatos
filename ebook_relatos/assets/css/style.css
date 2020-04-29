@@ -456,7 +456,10 @@ p {
 
 article {
   padding: 60px 0;
-  width: 65%;
+  width: 85%;
+}
+article h1, article h2, article h3, article h4, article p, article table, article ul, article ol, article .curriculo {
+  width: 75%;
 }
 @media (max-width: 700px) {
   article {
@@ -667,6 +670,7 @@ article {
   border-top: 4px solid #ffbc21;
   border-bottom: 4px solid #ffbc21;
   padding: 25px 25px 10px 25px;
+  width: 85%;
   margin-top: 90px;
 }
 @media (max-width: 700px) {
@@ -690,6 +694,9 @@ article {
   border-bottom: 4px solid #ffbc21;
   padding: 25px 25px 10px 25px;
   margin-top: 20px;
+}
+.curriculo p {
+  width: 100%;
 }
 @media (max-width: 700px) {
   .curriculo {
@@ -717,6 +724,40 @@ img {
   width: 100%;
 }
 
+.print {
+  width: 48px;
+  float: right;
+  margin-top: 87px;
+  pointer: hover;
+}
+@media (max-width: 700px) {
+  .print {
+    display: none;
+  }
+}
+@media (max-width: 425px) {
+  .print {
+    display: none;
+  }
+}
+
+.printindex {
+  width: 48px;
+  float: right;
+  margin-top: 50px;
+  pointer: hover;
+}
+@media (max-width: 700px) {
+  .printindex {
+    display: none;
+  }
+}
+@media (max-width: 425px) {
+  .printindex {
+    display: none;
+  }
+}
+
 .tabela {
   padding: 30px 0;
   width: 100%;
@@ -735,13 +776,17 @@ img {
 }
 
 .pagina {
-  font-size: 1em;
-  color: #9c9c9c;
-  border-bottom: 1px solid #d6d6d6;
+  font-size: 1.5em;
+  color: #ffbc21;
+  border-bottom: 1px solid #E5E5E5;
   width: 100%;
   display: block;
   margin: 0 0 30px 0;
   text-align: right;
+}
+
+li {
+  padding-bottom: 15px;
 }
 
 .sumario {
