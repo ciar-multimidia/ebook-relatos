@@ -400,6 +400,7 @@ a {
   color: #442f65;
   font-weight: bold;
   cursor: pointer;
+  word-wrap: break-word;
 }
 a:link, a:hover, a:visited, a:active {
   text-decoration: none;

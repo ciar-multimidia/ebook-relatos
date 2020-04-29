@@ -28,6 +28,7 @@ a {
 	color: $roxo;
 	font-weight: bold;
 	cursor: pointer;
+	word-wrap: break-word;
 	
 	&:link, &:hover, &:visited, &:active {
 		text-decoration: none;
