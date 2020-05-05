@@ -86,7 +86,7 @@ img {
 // TABELA 
 
 .tabela {
-	padding: 30px 0;
+	padding: 15px 0 30px 0;
 	width: 100%;
 	th {
 		background-color: $roxo;
@@ -99,6 +99,12 @@ img {
 	td {
 		background-color: $cinza;
 		padding: 10px;
+	}
+
+	caption {
+		text-align: left;
+		font-weight: bold;
+		padding-top: 30px;
 	}
 }
 

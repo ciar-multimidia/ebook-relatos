@@ -759,7 +759,7 @@ img {
 }
 
 .tabela {
-  padding: 30px 0;
+  padding: 15px 0 30px 0;
   width: 100%;
 }
 .tabela th {
@@ -773,6 +773,11 @@ img {
 .tabela td {
   background-color: #dedede;
   padding: 10px;
+}
+.tabela caption {
+  text-align: left;
+  font-weight: bold;
+  padding-top: 30px;
 }
 
 .pagina {
@@ -1052,6 +1057,234 @@ footer a:hover {
   position: relative;
   top: 1px;
   left: -20px;
+}
+
+@media print {
+  article {
+    width: 100%;
+  }
+
+  h1, h2, h3, h4 {
+    color: #442f65;
+    margin: 0;
+    padding: 35px 0 10px 0;
+  }
+
+  h1 {
+    font-size: 1.3em;
+    padding: 0 0 10px 0;
+  }
+
+  h2 {
+    font-size: 1em;
+  }
+
+  p {
+    margin: 0;
+    padding-bottom: 20px;
+    font-size: 0.7em;
+  }
+
+  .header_index {
+    width: 100%;
+    background-image: url(../img/topo.svg);
+    display: block;
+    padding-bottom: 0;
+  }
+
+  .tituloum {
+    font-family: "Source Code Pro", monospace;
+    font-weight: bold;
+    font-size: 5em;
+    color: #442f65;
+    padding: 100px 0 0 0;
+  }
+
+  .titulodois {
+    font-family: "Source Code Pro", monospace;
+    font-weight: normal;
+    font-size: 2em;
+    color: #442f65;
+    padding-top: 15px;
+    padding-left: 0;
+  }
+
+  .botoes_index {
+    display: none;
+  }
+
+  .marcaufg {
+    display: none;
+  }
+
+  .ficha {
+    width: 100%;
+  }
+  .ficha h1, .ficha h2, .ficha h3 {
+    color: black;
+    padding: 40px 0 0 0;
+  }
+  .ficha h4 {
+    color: black;
+    padding: 15px 0 0 0;
+    font-size: 0.9em;
+  }
+  .ficha p {
+    color: black;
+    padding-bottom: 0;
+    font-size: 0.8em;
+  }
+  .ficha .ciarufg {
+    margin: 30px 0 50px 0;
+    width: 150px;
+  }
+
+  .isbn {
+    border: 1px solid #000;
+    margin-top: 40px;
+    padding: 30px;
+    width: 60%;
+  }
+  .isbn p {
+    font-size: 0.9em;
+  }
+  .isbn .dado {
+    width: 80px;
+    float: left;
+  }
+  .isbn .info {
+    float: right;
+    width: calc(100% - 80px);
+  }
+
+  #link {
+    display: none;
+  }
+
+  #linha {
+    border-top: 2px solid #000;
+    width: 100%;
+    padding: 30px 0;
+  }
+
+  .header_conteudo {
+    background-image: url(../img/topoconteudo.svg);
+    background-size: cover;
+    background-position: top center;
+    width: 100%;
+    position: relative;
+    padding: 0 0 5px 0;
+  }
+  .header_conteudo .nome_curso h1 {
+    font-family: "Source Code Pro", monospace;
+    font-size: 3.1em;
+    font-weight: bold;
+    color: #442f65;
+    display: inline-block;
+    padding: 0;
+    margin-bottom: 0;
+    padding-right: 20px;
+  }
+  .header_conteudo .nome_curso p {
+    font-family: "Source Code Pro", monospace;
+    display: inline-block;
+    vertical-align: bottom;
+    margin: 0;
+    font-weight: normal;
+    font-size: 1.2em;
+    line-height: 1.2em;
+    color: #442f65;
+    width: 60%;
+    padding-bottom: 0;
+  }
+
+  .autor {
+    border-top: 4px solid #ffbc21;
+    border-bottom: 4px solid #ffbc21;
+    padding: 25px 25px 10px 25px;
+    width: 85%;
+    font-size: 0.8em;
+    margin-top: 30px;
+  }
+
+  .curriculo {
+    border-top: 4px solid #ffbc21;
+    border-bottom: 4px solid #ffbc21;
+    padding: 25px 25px 10px 25px;
+    margin-top: 20px;
+  }
+  .curriculo p {
+    width: 100%;
+  }
+
+  blockquote {
+    font-size: 0.8em;
+    margin: 0;
+    padding: 0 40px 20px 40px;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  figcaption {
+    font-size: 0.8em;
+  }
+
+  .print {
+    display: none;
+  }
+
+  .printindex {
+    display: none;
+  }
+
+  .tabela {
+    padding: 30px 0;
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+  }
+  .tabela th {
+    border: 1px solid #000;
+    color: #000;
+    font-size: 0.9em;
+    font-weight: normal;
+    padding: 10px;
+    text-align: left;
+  }
+  .tabela td {
+    border: 1px solid #000;
+    color: #000;
+    padding: 10px;
+    font-size: 0.8em;
+  }
+  .tabela caption {
+    text-align: left;
+    margin-bottom: 30px;
+  }
+
+  .pagina {
+    font-size: 1.1em;
+    color: #000;
+    border-bottom: 1px solid #E5E5E5;
+    width: 100%;
+    display: block;
+    margin: 0 0 30px 0;
+    text-align: right;
+  }
+
+  li {
+    padding-bottom: 15px;
+  }
+
+  .footer_index {
+    display: none;
+  }
+
+  .footer_conteudo {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
