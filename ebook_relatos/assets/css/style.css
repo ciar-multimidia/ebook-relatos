@@ -423,14 +423,47 @@ h1 {
   font-size: 1.8em;
   padding: 0 0 10px 0;
 }
+@media (max-width: 425px) {
+  h1 {
+    font-size: 1.3em;
+    line-height: 1.4em;
+  }
+}
 
 h2 {
   font-size: 1.3em;
+}
+@media (max-width: 425px) {
+  h2 {
+    font-size: 1.1em;
+    line-height: 1.4em;
+  }
 }
 
 p {
   margin: 0;
   padding-bottom: 20px;
+}
+@media (max-width: 425px) {
+  p {
+    font-size: 0.8em;
+    line-height: 1.7em;
+  }
+}
+
+@media (max-width: 425px) {
+  ul, ol {
+    font-size: 0.8em;
+    line-height: 1.7em;
+    margin-left: -20px;
+  }
+}
+
+@media (max-width: 425px) {
+  table {
+    font-size: 0.8em;
+    line-height: 1.7em;
+  }
 }
 
 .container {
@@ -462,6 +495,16 @@ article h1, article h2, article h3, article h4, article p, article table, articl
   width: 75%;
 }
 @media (max-width: 700px) {
+  article h1, article h2, article h3, article h4, article p, article table, article ul, article ol, article .curriculo {
+    width: 100%;
+  }
+}
+@media (max-width: 425px) {
+  article h1, article h2, article h3, article h4, article p, article table, article ul, article ol, article .curriculo {
+    width: 100%;
+  }
+}
+@media (max-width: 700px) {
   article {
     width: 100%;
     padding: 40px 15px;
@@ -491,9 +534,9 @@ article h1, article h2, article h3, article h4, article p, article table, articl
 .tituloum {
   font-family: "Source Code Pro", monospace;
   font-weight: bold;
-  font-size: 5em;
+  font-size: 3.5em;
   color: #ffbc21;
-  padding: 220px 0 0 30px;
+  padding: 280px 0 0 30px;
 }
 @media (max-width: 425px) {
   .tituloum {
@@ -512,9 +555,8 @@ article h1, article h2, article h3, article h4, article p, article table, articl
 .titulodois {
   font-family: "Source Code Pro", monospace;
   font-weight: normal;
-  font-size: 2em;
+  font-size: 1.8em;
   color: white;
-  padding-top: 15px;
   padding-left: 30px;
 }
 @media (max-width: 425px) {
@@ -603,24 +645,18 @@ article h1, article h2, article h3, article h4, article p, article table, articl
 }
 .header_conteudo .nome_curso h1 {
   font-family: "Source Code Pro", monospace;
-  font-size: 3.1em;
+  font-size: 1.9em;
   font-weight: bold;
   color: #ffbc21;
   display: inline-block;
-  padding: 0;
   margin-bottom: 0;
-  padding-right: 20px;
+  padding: 0 20px 0 0;
 }
-@media (max-width: .header_conteudo .nome_curso h1 tablet) {
+@media (max-width: 700px) {
   .header_conteudo .nome_curso h1 {
     padding-left: 15px;
-  }
-}
-@media (max-width: .header_conteudo .nome_curso h1 celular) {
-  .header_conteudo .nome_curso h1 {
-    padding-left: 15px;
-    width: 80%;
-    display: block;
+    padding-bottom: 10px;
+    line-height: 1.2em;
   }
 }
 .header_conteudo .nome_curso p {
@@ -629,64 +665,107 @@ article h1, article h2, article h3, article h4, article p, article table, articl
   vertical-align: bottom;
   margin: 0;
   font-weight: normal;
-  font-size: 1.2em;
+  font-size: 1.1em;
   line-height: 1.2em;
   color: #fff;
   width: 60%;
-  padding-bottom: 19px;
+  padding-bottom: 11px;
 }
-@media (max-width: .header_conteudo .nome_curso p tablet) {
-  .header_conteudo .nome_curso p {
-    width: 10%;
-  }
-}
-@media (max-width: 425px) {
+@media (max-width: 700px) {
   .header_conteudo .nome_curso p {
     padding-left: 15px;
-    width: 80%;
+    width: 100%;
+  }
+}
+@media (max-width: 700px) {
+  .header_conteudo .nome_curso p {
+    padding-left: 15px;
+    padding-right: 10px;
+    width: 100%;
   }
 }
 .header_conteudo .menu {
   float: right;
   width: 40px;
-  margin-top: -50px;
+  margin-top: -45px;
 }
-@media (max-width: .header_conteudo .menu tablet) {
+@media (max-width: 700px) {
   .header_conteudo .menu {
-    padding-right: 7px;
-    padding-top: 20px;
+    float: none;
+    display: inline-block;
+    padding-left: 15px;
+    margin-top: 10px;
+    width: 50px;
   }
 }
 @media (max-width: 425px) {
   .header_conteudo .menu {
     display: block;
     float: none;
-    padding: 55px 0 15px 15px;
-    width: 60px;
+    padding: 5px 0 15px 15px;
+    width: 50px;
   }
 }
 
 .autor {
   border-top: 4px solid #ffbc21;
   border-bottom: 4px solid #ffbc21;
-  padding: 25px 25px 10px 25px;
-  width: 85%;
-  margin-top: 90px;
+  padding: 20px 0 5px 0;
+  text-align: right;
+  width: 25%;
+  margin-top: 75px;
+  float: right;
+}
+.autor .clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.autor p {
+  font-size: 0.8em;
+  line-height: 1.9em;
 }
 @media (max-width: 700px) {
   .autor {
-    width: 100%;
-    float: none;
     display: block;
+    float: none;
+    width: 95%;
     margin-top: 20px;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 @media (max-width: 425px) {
   .autor {
-    width: 100%;
+    width: 90%;
     float: none;
-    margin-top: 20px;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
   }
+}
+
+.print {
+  width: 48px;
+  margin-top: 35px;
+  pointer: hover;
+  float: right;
+  clear: right;
+}
+@media (max-width: 700px) {
+  .print {
+    display: none;
+  }
+}
+@media (max-width: 425px) {
+  .print {
+    display: none;
+  }
+}
+
+.elementParagraph {
+  clear: right;
 }
 
 .curriculo {
@@ -719,26 +798,15 @@ blockquote {
   margin: 0;
   padding: 0 40px 20px 40px;
 }
+@media (max-width: 425px) {
+  blockquote {
+    font-size: 1em;
+    margin-left: -10px;
+  }
+}
 
 img {
   width: 100%;
-}
-
-.print {
-  width: 48px;
-  float: right;
-  margin-top: 87px;
-  pointer: hover;
-}
-@media (max-width: 700px) {
-  .print {
-    display: none;
-  }
-}
-@media (max-width: 425px) {
-  .print {
-    display: none;
-  }
 }
 
 .printindex {
@@ -784,10 +852,21 @@ img {
   font-size: 1.5em;
   color: #ffbc21;
   border-bottom: 1px solid #E5E5E5;
-  width: 100%;
+  width: 75%;
   display: block;
   margin: 0 0 30px 0;
   text-align: right;
+}
+@media (max-width: 700px) {
+  .pagina {
+    width: 100%;
+  }
+}
+@media (max-width: 425px) {
+  .pagina {
+    width: 100%;
+    font-size: 1.1em;
+  }
 }
 
 li {
@@ -803,45 +882,65 @@ li {
   }
 }
 .sumario h1 {
-  color: #2d1f42;
-  display: inline-block;
-}
-.sumario .iniciarebook {
-  float: right;
-  font-size: 1.2em;
-  font-weight: bold;
-  display: inline-block;
-  border-bottom: none;
   color: #442f65;
+  display: inline-block;
 }
-.sumario .iniciarebook:hover {
-  border-bottom: none;
-  color: #000;
-}
-@media (max-width: 425px) {
-  .sumario .iniciarebook {
-    display: block;
-    float: none;
-    padding-top: 20px;
+@media (max-width: 700px) {
+  .sumario h1 {
+    clear: both;
   }
 }
 .sumario a {
   display: block;
   color: inherit;
-  border-bottom: 1px solid #c6bbad;
-}
-.sumario a span {
-  padding: 40px 0 20px 0;
-  width: 80%;
-  font-weight: normal;
+  border-bottom: 1px solid #ffbc21;
+  padding: 0 0 10px 0;
+  width: 100%;
   display: inline-block;
+  vertical-align: top;
 }
-.sumario a span:nth-child(2) {
+.sumario a h2 {
+  font-size: 1.1em;
+  color: #442f65;
+  font-weight: bold;
+  width: 70%;
+  float: left;
+  clear: both;
+}
+.sumario a p {
+  font-size: 0.8em;
+  color: #352E25;
+  font-weight: normal;
+  float: left;
+  clear: both;
+}
+.sumario a .numero {
   float: right;
+  font-size: 1.8em;
+  color: #ffbc21;
+  font-weight: bold;
+  clear: right;
+  display: inline-block;
+  clear: both;
+  margin-top: -65px;
+}
+@media (max-width: 700px) {
+  .sumario a .numero {
+    margin-top: -55px;
+    padding-bottom: 0;
+  }
+}
+.sumario a .clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 .sumario a:hover {
   color: #442f65;
-  border-bottom: 1px solid #352E25;
+  border-bottom: 1px solid #442f65;
+}
+.sumario a:hover .numero, .sumario a:hover p {
+  color: #442f65;
 }
 @media (max-width: 425px) {
   .sumario a {
@@ -857,6 +956,35 @@ li {
   }
   .sumario a span:nth-child(2) {
     display: none;
+  }
+}
+
+.iniciarebook {
+  float: right;
+  font-size: 1.2em;
+  font-weight: bold;
+  display: inline-block;
+  border-bottom: none;
+  color: #442f65;
+  margin-top: 90px;
+}
+.iniciarebook:hover {
+  border-bottom: none;
+  color: #ffbc21;
+}
+@media (max-width: 700px) {
+  .iniciarebook {
+    display: block;
+    float: none;
+    padding: 20px 0 0 15px;
+    margin-top: 20px;
+  }
+}
+@media (max-width: 425px) {
+  .iniciarebook {
+    display: block;
+    float: none;
+    padding-top: 20px;
   }
 }
 
@@ -1168,43 +1296,18 @@ footer a:hover {
   }
 
   .header_conteudo {
-    background-image: url(../img/topoconteudo.svg);
-    background-size: cover;
-    background-position: top center;
-    width: 100%;
-    position: relative;
-    padding: 0 0 5px 0;
-  }
-  .header_conteudo .nome_curso h1 {
-    font-family: "Source Code Pro", monospace;
-    font-size: 3.1em;
-    font-weight: bold;
-    color: #442f65;
-    display: inline-block;
-    padding: 0;
-    margin-bottom: 0;
-    padding-right: 20px;
-  }
-  .header_conteudo .nome_curso p {
-    font-family: "Source Code Pro", monospace;
-    display: inline-block;
-    vertical-align: bottom;
-    margin: 0;
-    font-weight: normal;
-    font-size: 1.2em;
-    line-height: 1.2em;
-    color: #442f65;
-    width: 60%;
-    padding-bottom: 0;
+    display: none;
   }
 
   .autor {
-    border-top: 4px solid #ffbc21;
-    border-bottom: 4px solid #ffbc21;
-    padding: 25px 25px 10px 25px;
+    border-top: none;
+    border-bottom: none;
+    padding: none;
+    text-align: left;
     width: 85%;
     font-size: 0.8em;
     margin-top: 30px;
+    margin-left: 13px;
   }
 
   .curriculo {

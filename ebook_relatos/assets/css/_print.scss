@@ -134,50 +134,20 @@ p {
 //Header conteudo
 
 .header_conteudo {
-	background-image: url(../img/topoconteudo.svg);
-	background-size: cover;
-	background-position: top center;
-	width: 100%;
-	position: relative;
-	padding: 0 0 5px 0;
-
-	.nome_curso {
-
-		h1 {
-			font-family: $fonte_titulo;
-			font-size: 3.1em;
-			font-weight: bold;
-			color: $roxo;
-			display: inline-block;
-			padding: 0;
-			margin-bottom: 0;
-			padding-right: 20px;
-		}
-
-		p {
-			font-family: $fonte_titulo;
-			display: inline-block;
-			vertical-align: bottom;
-			margin: 0;
-			font-weight: normal;
-			font-size: 1.2em;
-			line-height: 1.2em;
-			color: $roxo;
-			width: 60%;
-			padding-bottom: 0;
-		}
-	}
-	}
+	display: none;
+}
 
 //Autores
 
 .autor {
-	border-top: 4px solid $amarelo;
-	border-bottom: 4px solid $amarelo;
-	padding: 25px 25px 10px 25px;
+	border-top: none;
+	border-bottom: none;
+	padding: none;
+	text-align: left;
 	width: 85%;
 	font-size: 0.8em;
 	margin-top: 30px;
+	margin-left: 13px;
 }
 
 .curriculo {
