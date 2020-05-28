@@ -317,21 +317,29 @@ li {
 .isbn {
 	border: 1px solid $grafite;
 	margin: 15px 0 15px 0;
-	padding: 30px;
+	padding: 15px;
 	width: 60%;
+	@media (max-width: $celular) {
+		width: 100%;
+	}
 	p {
 		font-size: 0.9em;
+		@media (max-width: $celular) {
+		font-size: 0.8em;
+		}
 	}
 	.dado {
-		width: 80px;
+		width: 50px;
 		float: left;
 	}
 	.info {
 		float: right;
-		width: calc(100% - 80px)
+		width: calc(100% - 50px)
 	}
+
 	.info p {
 		width: 100%;
+
 	}
 }
 
