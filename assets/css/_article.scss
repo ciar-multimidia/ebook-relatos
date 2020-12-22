@@ -1,0 +1,450 @@
+ //ARTICLE
+
+//Autores
+
+.autor {
+	border-top: 4px solid $amarelo;
+	border-bottom: 4px solid $amarelo;
+	padding: 20px 0 5px 0;
+	text-align: right;
+	width: 25%;
+	margin-top: 75px;
+	float: right;
+	.clearfix::after {
+	  content: "";
+	  clear: both;
+	  display: table;
+	}
+	p {
+		font-size: 0.8em;
+		line-height: 1.9em;
+	}
+	@media (max-width: $tablet) {
+		display: block;
+		float: none;
+		width: 95%;
+		margin-top: 20px;
+		text-align: left;
+		margin-left: auto;
+		margin-right: auto;
+
+	}
+	@media (max-width: $celular) {
+		width: 90%;
+		float: none;
+		margin-top: 40px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+.print {
+	width: 48px;
+	margin-top: 35px;
+	pointer: hover;
+	float: right;
+	clear: right;
+	@media (max-width: $tablet) {
+		display: none;
+		}
+	@media (max-width: $celular) {
+		display: none;
+		}
+}
+
+.elementParagraph {
+  clear: right;
+}
+
+
+
+.curriculo {
+	border-top: 4px solid $amarelo;
+	border-bottom: 4px solid $amarelo;
+	padding: 25px 25px 10px 25px;
+	margin-top: 20px;
+	p {
+		width: 100%;
+	}
+	@media (max-width: $tablet) {
+		width: 100%;
+		float: none;
+		display: block;
+		margin-top: 20px;
+
+	}
+	@media (max-width: $celular) {
+		width: 100%;
+		float: none;
+		margin-top: 20px;
+	}
+}
+
+blockquote {
+	font-size: 0.9em;
+	margin: 0;
+	padding: 0 40px 20px 40px;
+	@media (max-width: $celular) {
+			font-size: 1em;
+			margin-left: -10px;
+		}
+}
+
+img {
+	width: 100%;
+}
+
+//IMPRIMIR
+
+
+
+
+.printindex {
+	width: 48px;
+	float: right;
+	margin-top: 50px;
+	pointer: hover;
+	@media (max-width: $tablet) {
+		display: none;
+		}
+	@media (max-width: $celular) {
+		display: none;
+		}
+}
+
+// TABELA 
+
+.tabela {
+	padding: 15px 0 30px 0;
+	width: 100%;
+	th {
+		background-color: $roxo;
+		color: $bg;
+		font-size: 1.1em;
+		font-weight: normal;
+		padding: 10px;
+		text-align: left;
+	}
+	td {
+		background-color: $cinza;
+		padding: 10px;
+	}
+
+	caption {
+		text-align: left;
+		font-weight: bold;
+		padding-top: 30px;
+	}
+}
+
+
+// PAGINACAO
+
+.pagina {
+	font-size: 1.5em;
+	color: $amarelo;
+	border-bottom: 1px solid #E5E5E5;
+	width: 75%;
+	display: block;
+	margin: 0 0 30px 0;
+	text-align: right;
+	@media (max-width: $tablet) {
+		width: 100%;
+	}
+	@media (max-width: $celular) {
+		width: 100%;
+		font-size: 1.1em;
+	}
+}
+
+//LISTA 
+
+li {
+	padding-bottom: 15px;
+}
+
+
+//Sumário
+
+.sumario {
+	padding: 80px 0 80px 0;
+	@media (max-width: $tablet) {
+		padding: 30px 15px 30px 15px;
+	}
+	h1 {
+		color: $roxo;
+		display: inline-block;
+		@media (max-width: $tablet) {
+			clear: both;
+		}
+	}
+
+	a {				
+		display: block;
+		color: inherit;
+		border-bottom: 1px solid $amarelo;
+		padding: 0 0 10px 0; 
+		width: 100%;
+		display: inline-block;
+		vertical-align: top;
+		h2 {
+			font-size: 1.1em;
+			color: $roxo;
+			font-weight: bold;
+			width: 70%;
+			float: left;
+			clear: both;
+		}
+		p {
+			font-size: 0.8em;
+			color: $grafite;
+			font-weight: normal;
+			float: left;
+			clear: both;
+		}
+
+		.numero {
+			float: right;
+			font-size: 1.8em;
+			color: $amarelo;
+			font-weight: bold;
+			clear: right;
+			display: inline-block;
+			clear: both;
+			margin-top: -65px;
+			@media (max-width: $tablet) {
+				margin-top: -55px;
+				padding-bottom: 0;
+			}
+
+		}
+
+		.clearfix::after {
+		  content: "";
+		  clear: both;
+		  display: table;
+		}
+		
+		// &:nth-child(2){
+		// 	float: right;
+		// 	}
+		&:hover {
+			color: $roxo;
+			border-bottom: 1px solid $roxo;
+			.numero, p {
+				color: $roxo;
+			}
+		}
+		@media (max-width: $celular) {
+		width: 100%;
+		}
+		@media (max-width: $tablet) {
+		span {
+		padding: 40px 0 20px 0; 
+		width: 100%;
+		font-weight: normal;
+		display: inline-block;
+		&:nth-child(2){
+			display: none;
+			}
+		}
+		}
+	}
+}
+
+.iniciarebook {
+		float: right;
+		font-size: 1.2em;
+		font-weight: bold;
+		display: inline-block;
+		border-bottom: none;
+		color: $roxo;
+		margin-top: 90px;
+		&:hover {
+			border-bottom: none;
+			color: $amarelo;
+		}
+		@media (max-width: $tablet) {
+			display: block;
+			float: none;
+			padding: 20px 0 0 15px;
+			margin-top: 20px;
+		}
+		@media (max-width: $celular) {
+			display: block;
+			float: none;
+			padding-top: 20px;
+		}
+	}
+
+//Ficha técnica
+
+.ficha {
+
+	width: 100%;
+
+	dl {
+		color: darken($roxo, 10%);
+		dt {
+			font-weight: bold;
+			padding-bottom: 0.2em;
+			padding-top: 1em;
+			h3 {
+				padding-top: 0.5em;
+			}
+		}
+		dd {
+		 	font-weight: normal;
+		 	margin-left: 0;
+		}
+	}
+	
+	h1, h2, h3 {
+		color: darken($roxo, 10%);
+		padding: 40px 0 0 0;
+	}
+
+	h4 {
+		color: darken($roxo, 10%);
+		padding: 15px 0 0 0;
+	}
+
+	p {
+		color: darken($roxo, 10%);
+		padding-bottom: 0;
+	}
+
+	.ciarufg {
+		margin: 30px 0 50px 0;
+		width: 240px;
+	}
+
+	@media (max-width: $tablet) {
+		width: 100%;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+	@media (max-width: $celular) {
+		width: 100%;
+	}
+}
+
+.isbn {
+	border: 1px solid $grafite;
+	margin: 15px 0 15px 0;
+	padding: 15px;
+	width: 60%;
+	@media (max-width: $celular) {
+		width: 100%;
+	}
+	p {
+		font-size: 0.9em;
+		@media (max-width: $celular) {
+		font-size: 0.8em;
+		}
+	}
+	.dado {
+		width: 50px;
+		float: left;
+	}
+	.info {
+		float: right;
+		width: calc(100% - 50px)
+	}
+
+	.info p {
+		width: 100%;
+
+	}
+}
+
+#link {
+	width: 20%;
+	font-weight: normal;
+	display: block;
+	margin-top: 50px;
+	background-color: $roxo;
+	color: $bg;
+	font-size: 1.2em;
+	padding: 15px;
+	text-align: center;
+	&:hover {
+		background-color: $amarelo;
+		color: darken($roxo, 10%);
+	}
+	@media (max-width: $tablet) {
+		width: 32%;
+	}
+	@media (max-width: $celular) {
+		width: 100%;
+		text-align: center;
+	}
+
+}
+
+#linha {
+	border-top: 2px solid $amarelo;
+	width: 100%;
+	padding: 30px 0;
+}
+
+//NOTA DE RODAPÉ
+
+main {
+	input[type="checkbox"]{
+    position: absolute;
+    left: -10000px;
+    visibility: hidden;
+	}
+
+	label{
+    // width: 4px;
+    // height: 4px;
+    font-size: 0.7em;
+    // vertical-align: baseline;
+    background-color: #d9d9d9;
+    font-weight: bold;
+    color: black;
+    padding: 3px 6px;
+    margin: 0 2px 0 2px;
+    user-select: none;
+	}
+
+	.nota-rodape {
+    // border-top: 4px solid $amarelo;
+    display: none;
+    position: absolute;
+    float: right;
+    font-size: 1em;
+    line-height: 1.4em;
+    right: 0;
+    width: 266px;
+    margin-top: -1em;
+    margin-right: 10px;
+    color: #000;
+    background-color: #f7c40b;
+    z-index: 2;
+    padding: 25px;
+	    a {
+	    text-decoration: none;
+	    color: #4f00cc;
+	    font-weight: normal;
+	    text-decoration: underline;
+		}
+	}
+		
+	input[type="checkbox"]:checked + label{
+    background-color: $amarelo;
+	}	
+
+	input[type="checkbox"]:checked + label + .nota-rodape{
+    display: block;
+	}
+
+}
+
+
+
+
+
